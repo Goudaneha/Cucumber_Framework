@@ -1,0 +1,278 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 14,
+        "name": "Varify outlook",
+        "description": "",
+        "id": "login-to-microsoft-outlook;varify-outlook;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 11934877600,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user is on browser page",
+            "match": {
+              "location": "StepDefin.user_is_on_browser_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 217400,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user launch outlook",
+            "match": {
+              "location": "StepDefin.user_launch_outlook()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1251757000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user has to login with valid carencials email \"nehaashokj@maveric-systems.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "nehaashokj@maveric-systems.com",
+                  "offset": 47
+                }
+              ],
+              "location": "StepDefin.user_has_to_login_with_valid_carencials_email(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 4817013400,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "password \"!2ji14cs019\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "!2ji14cs019",
+                  "offset": 10
+                }
+              ],
+              "location": "StepDefin.password(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6302091100,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user click on login",
+            "match": {
+              "location": "StepDefin.user_click_on_login()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3000046800,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "click on start new",
+            "match": {
+              "location": "StepDefin.click_on_start_new()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 30,
+        "name": "Verify send new mail",
+        "description": "",
+        "id": "login-to-microsoft-outlook;verify-send-new-mail;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 196773800,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "user clicks on button \"New Message\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "New Message",
+                  "offset": 23
+                }
+              ],
+              "location": "StepDefin.user_clicks_on_button(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 31800,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "sent message window will open",
+            "match": {
+              "location": "StepDefin.sent_message_window_will_open()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3118791000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "user has to enter sender mail id in \"yalinis@maveric-systems.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "yalinis@maveric-systems.com",
+                  "offset": 37
+                }
+              ],
+              "location": "StepDefin.user_has_to_enter_sender_mail_id_in(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 319303600,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "add subject in  \"Hello\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Hello",
+                  "offset": 17
+                }
+              ],
+              "location": "StepDefin.add_subject_in(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1999135200,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "user is in message body",
+            "match": {
+              "location": "StepDefin.user_is_in_message_body()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2237516000,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "uesr has to write text",
+            "match": {
+              "location": "StepDefin.uesr_has_to_write_text()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 6333551600,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "click on button \"outlook\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "outlook",
+                  "offset": 17
+                }
+              ],
+              "location": "StepDefin.click_on_button(String)"
+            },
+            "matchedColumns": [
+              3
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 54500,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "screen navigate to new screen",
+            "match": {
+              "location": "StepDefin.screen_navigate_to_new_screen()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 12032627800,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "select file to be attached",
+            "match": {
+              "location": "StepDefin.select_file_to_be_attached()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 350651500,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "click on send",
+            "match": {
+              "location": "StepDefin.click_on_send()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Login to microsoft outlook",
+    "description": "",
+    "id": "login-to-microsoft-outlook",
+    "keyword": "Feature",
+    "uri": "C:/Users/nehaashokj/Downloads/Allica/Demo_maven/src/main/java/Demo.feature"
+  }
+]
