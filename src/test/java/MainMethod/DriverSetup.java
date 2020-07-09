@@ -9,7 +9,7 @@ public class DriverSetup extends BrowserConfig{
 	private static WebDriver driver;
 	
 	public static void browsersetup() {
-		 driver=browsername("chrome");
+		 driver=browsername("gecko");
 	}
 	
 	public static WebDriver getobject() {

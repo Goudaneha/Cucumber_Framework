@@ -3,7 +3,8 @@ package utility;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
 
 public class BrowserConfig {
 
@@ -18,14 +19,16 @@ public class BrowserConfig {
 	}
 	
 	public static WebDriver browsername(String browser) {
-		if(browser.equalsIgnoreCase("chrome")) {
-			System.setProperty("webdriver.chrome.driver","C:/Users/nehaashokj/Downloads/chromedriver_win32/chromedriver.exe");
-			driver = new ChromeDriver();
+		if(browser.equalsIgnoreCase("gecko")) {
+			System.setProperty("webdriver.gecko.driver","D:\\geckodriver-v0.26.0-win64\\geckodriver.exe");
+			driver = new FirefoxDriver();
 			driver.manage().deleteAllCookies();
 			driver.manage().window().maximize();
 			driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
-			driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+			//Screenshot screenshot = new AShot().takeScreenshot(driver);
 			driver.get("https://outlook.office365.com/");
+			
 			}
 		return driver;
 		}
